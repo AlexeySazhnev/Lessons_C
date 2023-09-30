@@ -5,13 +5,13 @@
 
 int[] RandomArray(int arrLength)
 {
-    int[] arr = new int[arrLength];
+    int[] array = new int[arrLength];
     Random rand = new Random();
     for (int i = 0; i < arrLength; i++)
     {
-        arr[i] = rand.Next(2);
+        array[i] = rand.Next(2);
     }
-    return arr;
+    return array;
 }
 
 void PrintArray(int[] array)
