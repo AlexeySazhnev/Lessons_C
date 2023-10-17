@@ -6,6 +6,7 @@
 Console.WriteLine("Введите натуральное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
+
 if (number < 1)
 {
     Console.WriteLine("Некорректный ввод!");
@@ -20,3 +21,4 @@ void NaturalsNumbers(int num)
     Console.Write($"{num} ");
     NaturalsNumbers(num - 1);
 }
+

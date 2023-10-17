@@ -4,6 +4,7 @@
 // M = 1; N = 15 -> 120
 // M = 4; N = 8. -> 30
 
+
 int UserNumber(string message)
 {
     Console.WriteLine(message);
@@ -13,7 +14,7 @@ int UserNumber(string message)
 
 int SumNaturalNumbers(int m, int n)
 {
-   if (m > n)
+    if (m > n)
     {
         return n + SumNaturalNumbers(m, n + 1);
     }
@@ -21,10 +22,10 @@ int SumNaturalNumbers(int m, int n)
     {
         return n + SumNaturalNumbers(m, n - 1);
     }
-    else return n ;
+    else return n;
 }
 
-int m = UserNumber("Enter digit m: ");
-int n = UserNumber("Enter digit n: ");
-int summa = SumNaturalNumbers(m, n);
-Console.WriteLine(summa);
+int m = UserNumber("Введите число m: ");
+int n = UserNumber("Введите число n: ");
+if (m < 0 || n < 0) Console.WriteLine("Число m или n не натуральное!!!");
+Console.WriteLine(SumNaturalNumbers(m, n));
